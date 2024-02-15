@@ -12,7 +12,6 @@ This is a web application designed to replicate some functionalities of Google C
 ## Deployed link
 
 - Backend - https://hyperface-rdk3.onrender.com/
-- Frontend - 
 
 ## Features
 
@@ -20,9 +19,6 @@ This is a web application designed to replicate some functionalities of Google C
 - Create, update, view, and delete events
 - Recurring events support
 - Support for all-day events
-
-
-## Installation 
 
 
 ## API Endpoints
