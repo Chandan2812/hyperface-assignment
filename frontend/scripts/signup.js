@@ -1,5 +1,5 @@
 // signup.js
-const url = "http://localhost:8000";
+const url = "https://hyperface-rdk3.onrender.com";
 
     const signupForm = document.getElementById('signup-form');
 
