@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "9974ab2a-2ca5-4d90-9100-bbe5f78f616f",
+		"name": "Hyperface",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25330982"
+	},
+	"item": [
+		{
+			"name": "Welcome Message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Monthly Meeting\",\r\n    \"description\": \"Discuss monthly goals and updates\",\r\n    \"startTime\": \"2024-03-05T10:00:00\", \r\n    \"endTime\": \"2024-03-05T11:00:00\", \r\n    \"recurrence\": {\r\n        \"type\": \"monthly\",\r\n        \"dayOfMonth\": 5, \r\n        \"frequency\": 1 \r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\":\"abc\",\r\n  \"email\":\"abc@gmail.com\",\r\n  \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\":\"abc@gmail.com\",\r\n  \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creating event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Monthly Meeting\",\r\n    \"description\": \"Discuss monthly goals and updates\",\r\n    \"startTime\": \"2024-03-05T10:00:00\", \r\n    \"endTime\": \"2024-03-05T11:00:00\", \r\n    \"recurrence\": {\r\n        \"type\": \"monthly\",\r\n        \"dayOfMonth\": 5, \r\n        \"frequency\": 1 \r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/events",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Monthly Meeting\",\r\n    \"description\": \"Discuss monthly goals and updates\",\r\n    \"startTime\": \"2024-03-05T10:00:00\", \r\n    \"endTime\": \"2024-03-05T11:00:00\", \r\n    \"recurrence\": {\r\n        \"type\": \"monthly\",\r\n        \"dayOfMonth\": 5, \r\n        \"frequency\": 1 \r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/events",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get event using date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Monthly Meeting\",\r\n    \"description\": \"Discuss monthly goals and updates\",\r\n    \"startTime\": \"2024-03-05T10:00:00\", \r\n    \"endTime\": \"2024-03-05T11:00:00\", \r\n    \"recurrence\": {\r\n        \"type\": \"monthly\",\r\n        \"dayOfMonth\": 5, \r\n        \"frequency\": 1 \r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/events/month/2024/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"month",
+						"2024",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get event in particular month",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Event Title\",\r\n  \"description\": \"Updated event description\",\r\n  \"startTime\": \"2024-02-15T10:00:00.000Z\",\r\n  \"endTime\": \"2024-02-15T11:00:00.000Z\",\r\n  \"private\": true,\r\n  \"eventType\": \"normal\",\r\n  \"recurrence\": {\r\n    \"type\": \"weekly\",\r\n    \"frequency\": 1,\r\n    \"daysOfWeek\": [1] \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/events/65cdf4ff0ba2a8e8f8c844fe",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"65cdf4ff0ba2a8e8f8c844fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete the event",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"new Event Title\",\r\n  \"description\": \"new event description\",\r\n  \"startTime\": \"2024-02-15T10:00:00.000Z\",\r\n  \"endTime\": \"2024-02-15T11:00:00.000Z\",\r\n  \"private\": true,\r\n  \"eventType\": \"normal\",\r\n  \"recurrence\": {\r\n    \"type\": \"weekly\",\r\n    \"frequency\": 1,\r\n    \"daysOfWeek\": [1] \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/events/65cd12ccf1c7e2f87392146f",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"65cd12ccf1c7e2f87392146f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
