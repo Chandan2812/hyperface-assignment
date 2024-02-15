@@ -11,7 +11,7 @@ This is a web application designed to replicate some functionalities of Google C
 
 ## Deployed link
 
-- Backend -
+- Backend - https://hyperface-rdk3.onrender.com/
 - Frontend - 
 
 ## Features
