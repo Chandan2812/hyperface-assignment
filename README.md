@@ -1,6 +1,6 @@
 # Google Calendar Clone
 
-This is a web application designed to replicate some functionalities of Google Calendar. Users can sign up, log in, create events, view events for specific dates, update events, delete events, and log out. The application also provides color-coded event types and supports different recurrence options.
+This is a web application designed to replicate some functionalities of Google Calendar. Users can sign up, log in, create events, view events for specific dates, update events, delete events, and log out.
 
 ## Technologies Used
 
